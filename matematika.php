@@ -62,6 +62,11 @@ class Matematika
     {
         return $panjang * $lebar;
     }
+
+    /**
+     * Luas keliling bola
+     * Rumus: 
+     */
 }
 
 $bangunRuang = new Matematika();
