@@ -33,6 +33,17 @@ class Matematika
         return $this->phi * $dua * $jari_jari;
     }
 
+    /**
+     * Menghitung panjang sisi miring segitiga menggunakan rumus pitagoras
+     * Rumus:  = akar (alas kuadrat + tinggi kuadrat)
+     */
+    function pitagoras($alas, $tinggi)
+    {
+        $kuadrat_alas = $this->kuadrat($alas);
+        $kuadrat_tinggi = $this->kuadrat($tinggi);
+        return sqrt($kuadrat_alas + $kuadrat_tinggi);
+    }
+
     function luasKubus()
     {
     }
@@ -42,3 +53,5 @@ $bangunRuang = new Matematika();
 echo 'Luas lingkaran: ' . $bangunRuang->luasLingkaran(30);
 echo '<br>';
 echo 'Keliling lingkaran: ' . $bangunRuang->kelilingLingkaran(8);
+echo '<br>';
+echo 'Panjang sisi miring segitiga: ' . $bangunRuang->pitagoras(20, 45);
