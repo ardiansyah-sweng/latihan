@@ -33,8 +33,15 @@ class Matematika
         return $this->phi * $dua * $jari_jari;
     }
 
-    function luasKubus()
+    /**
+     * Menghitung Luas Permukaan Kubus
+     * Rumus jika panjang satu sisi diketahui 
+     * Luas kubus = 6 * Sisi kuadrat
+     */
+    function luasKubus($sisi)
     {
+        $enam_sisi = 6;
+        return $enam_sisi * $this->kuadrat($sisi);
     }
 }
 
@@ -42,3 +49,5 @@ $bangunRuang = new Matematika();
 echo 'Luas lingkaran: ' . $bangunRuang->luasLingkaran(30);
 echo '<br>';
 echo 'Keliling lingkaran: ' . $bangunRuang->kelilingLingkaran(8);
+echo '<br>';
+echo 'Luas sisi kubus: ' . $bangunRuang->luasKubus(8);
