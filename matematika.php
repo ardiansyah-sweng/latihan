@@ -33,9 +33,9 @@ class Matematika
         return $this->phi * $dua * $jari_jari;
     }
 
-     /* Menghitung panjang sisi miring segitiga menggunakan rumus pitagoras
-     * Rumus:  = akar (alas kuadrat + tinggi kuadrat)
-     */
+    /* Menghitung panjang sisi miring segitiga menggunakan rumus pitagoras
+    * Rumus:  = akar (alas kuadrat + tinggi kuadrat)
+    */
     function pitagoras($alas, $tinggi)
     {
         $kuadrat_alas = $this->kuadrat($alas);
