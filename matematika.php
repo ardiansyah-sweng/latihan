@@ -65,8 +65,13 @@ class Matematika
 
     /**
      * Luas keliling bola
-     * Rumus: 
+     * Rumus: (4/3 * Phi) * jari-jari kuadrat
      */
+    function kelilingBola($jari_jari)
+    {
+        $empat_per_tiga = 4/3;
+        return ($empat_per_tiga * $this->phi) * $this->kuadrat($jari_jari);
+    }
 }
 
 $bangunRuang = new Matematika();
@@ -79,4 +84,6 @@ echo '<br>';
 echo 'Panjang sisi miring segitiga: ' . $bangunRuang->pitagoras(20, 45);
 echo '<br>';
 echo 'Luas persegi panjang: ' . $bangunRuang->luasPersegiPanjang(12, 17);
+echo '<br>';
+echo 'Keliling bola: ' . $bangunRuang->kelilingBola(17);
 
