@@ -53,6 +53,15 @@ class Matematika
         $enam_sisi = 6;
         return $enam_sisi * $this->kuadrat($sisi);
     }
+
+    /**
+     * Luas persegi panjang
+     * Rumus: panjang * lebar
+     */
+    function luasPersegiPanjang($panjang, $lebar)
+    {
+        return $panjang * $lebar;
+    }
 }
 
 $bangunRuang = new Matematika();
@@ -63,4 +72,6 @@ echo '<br>';
 echo 'Luas sisi kubus: ' . $bangunRuang->luasKubus(8);
 echo '<br>';
 echo 'Panjang sisi miring segitiga: ' . $bangunRuang->pitagoras(20, 45);
+echo '<br>';
+echo 'Luas persegi panjang: ' . $bangunRuang->luasPersegiPanjang(12, 17);
 
