@@ -73,5 +73,5 @@ echo 'Luas sisi kubus: ' . $bangunRuang->luasKubus(8);
 echo '<br>';
 echo 'Panjang sisi miring segitiga: ' . $bangunRuang->pitagoras(20, 45);
 echo '<br>';
-echo 'Luas persegi panjang: ' . $bangunRuang->luasPersegiPanjang(20, 45);
+echo 'Luas persegi panjang: ' . $bangunRuang->luasPersegiPanjang(12, 17);
 
